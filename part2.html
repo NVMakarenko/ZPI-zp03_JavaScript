@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab_2</title>
+    <style>
+    
+      .first {
+      float: left;
+      width: 210px;
+      padding: 5px;
+    }
+    </style>
+
+    <script>
+         function makeCounter() {
+            let count = 0;
+            return function () {
+            return count++;
+            }
+          }
+
+          function counter() {console.log("За котів"); makeCounter();}
+          function counter2() { console.log("За собак"); makeCounter(); }
+
+    </script>
+    
+  </head>
+
+  <body>
+    <h1>Практична робота №2</h1>
+     <p>Макаренко Наталія, студентка 2 курсу, група ЗПІ-зп03
+    <h2>Коти проти Собак</h2>
+
+<div>
+
+<div class="first" >
+  <button type="button" id="Cat" onclick="counter()" ><img src="Cat.jpg" width = "175px"></button>
+</div>
+
+  <div class="first">
+    <button type="button" id="Dog"  onclick="counter2()" ><img src="Dog.jpg"width = "200px"></button>
+  </div>
+
+</div>
+
+</body>
+</html>
